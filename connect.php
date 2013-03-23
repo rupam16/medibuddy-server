@@ -4,14 +4,14 @@
 $host_username = "isrupam39--59764";
 $host_pass = "QR44y54b40Xt";*/
 
-$host_name = "localhost";
-$host_username = "root";
-$host_pass = "";
+$host_name = $_ENV['OPENSHIFT_MYSQL_DB_HOST'];
+$host_username = $_ENV['OPENSHIFT_MYSQL_DB_USERNAME'];
+$host_pass = $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'];
 
 $con = mysql_connect($host_name,$host_username,$host_pass);
 
 if($con){
-	if(mysql_select_db("medibuddy_phpfogapp_com",$con)){
+	if(mysql_select_db("medibuddy",$con)){
 	}
 	else{
 		echo "database error";
