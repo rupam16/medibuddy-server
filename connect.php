@@ -1,9 +1,5 @@
 <?php
 
-/*$host_name = "mysql-shared-02.phpfog.com";
-$host_username = "isrupam39--59764";
-$host_pass = "QR44y54b40Xt";*/
-
 $host_name = $_ENV['OPENSHIFT_MYSQL_DB_HOST'];
 $host_username = $_ENV['OPENSHIFT_MYSQL_DB_USERNAME'];
 $host_pass = $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'];
